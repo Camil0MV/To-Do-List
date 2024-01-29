@@ -1,0 +1,102 @@
+* {
+    font-family: Shantell Sans;
+}
+
+body {
+    background-image: url('img/paper.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #333333;
+    user-select: none;
+}
+
+#container #title {
+    font-size: 45px;
+}
+
+#container #tasks-container .added-task {
+    position: relative;
+    margin: 0 5vh 2vw 0;
+}
+#container #tasks-container #task-1 {
+    margin-left: 1vw;
+}
+
+#container #tasks-container .added-task .delete-task {
+    width: 1.50vw;
+    height: 3.22vh;
+    cursor: pointer;
+    background-color: #e33849;
+    color: #ffffff;
+    border: 1px solid #E9626F;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#container #tasks-container .added-task .delete-task:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+#container #tasks-container .added-task .task input[type="checkbox"] {
+    opacity: 0;
+
+}
+
+#container #tasks-container .added-task .task .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 1.50vw;
+    height: 3.22vh;;
+    background-color: #E8EBEF;
+    border: 1px solid #4443438b;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#container #tasks-container .added-task .task input:checked + .checkmark {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#container #tasks-container .added-task .task .checkmark:after {
+    content: "✔";
+    transform: translate(-50%, -50%);
+    color: #4443438b;
+}
+
+#container #tasks-container .added-task .task input:checked + .checkmark:after {
+    color: #ffffff;
+}
+
+#container #tasks-container .added-task .task input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    border-bottom: 1px solid #333333;
+}
+
+#container #add-task {
+    margin-top: 7vh;
+    width: 1.8vw;
+    height: 3.8vh;
+    cursor: pointer;
+    background-color: #4ab556;
+    color: #ffffff;
+    border: 1px solid #4ab556;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+#container #add-task:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
